@@ -3,7 +3,7 @@
 #Finding the minimum number you cannot make, given a set of numbers
 
 def nonConstructibleChange(coins):
-  #we need a return value
+	#we need a return value
 	minimumChange = 0
 	
 	#we'll use a flag to determine if we need to do things the long way or if one of the short edge cases is true
