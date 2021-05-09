@@ -1,3 +1,7 @@
+//Ryan Howse
+//5/9/2021
+//Finding the minimum number you cannot make, given a set of numbers
+
 #include <vector>
 #include <numeric>
 using namespace std;
