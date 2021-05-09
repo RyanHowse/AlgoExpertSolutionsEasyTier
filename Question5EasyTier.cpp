@@ -9,7 +9,7 @@ int nonConstructibleChange(vector<int> coins) {
 	//we'll use a flag to determine if we need to do things the long way or if one of the short edge cases is true
 	bool doTheMath = true;
 	
-  //first lets sort the coins vector
+  	//first lets sort the coins vector
 	sort(coins.begin(), coins.end());
 	
 	//let's handle some edge cases!
@@ -35,8 +35,6 @@ int nonConstructibleChange(vector<int> coins) {
 	int currentIndex = 0;
 	//and a running total
 	int runningTotal = 0;
-	//and a variable to check for a perfect sequence in order to handle our last edge case
-	bool isSequence = true;
 	
 	while(doTheMath){
 		//this keeps us from going out of bounds
@@ -47,8 +45,6 @@ int nonConstructibleChange(vector<int> coins) {
 			if((runningTotal + coins[currentIndex] + 1) >= coins[currentIndex+1]){
 				//update our running total
 				runningTotal += coins[currentIndex];
-				//check to see if we are on sequence
-				if(currentIndex+1 != coins[currentIndex]){ isSequence = false; }
 				//increment index and keep going
 				currentIndex++;
 			}
@@ -59,16 +55,8 @@ int nonConstructibleChange(vector<int> coins) {
 			}
 		}
 		else{
-			//the final edge case is that if all the numbers are perfectly in sequence from 1 to n, the minimum will also be the sum + 1
-			//to handle this, we use the isSequence variable
-			if(isSequence == true){
 				minimumChange = accumulate(coins.begin(), coins.end(), 0) + 1;
 				doTheMath = false;
-			}
-			else{
-				minimumChange = coins[coins.size()-1] + 1;
-				doTheMath = false;
-			}
 		}
 	}
 	
