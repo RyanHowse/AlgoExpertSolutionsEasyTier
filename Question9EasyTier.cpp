@@ -1,6 +1,6 @@
 //Ryan Howse
 //5/24/2021
-//Depth-frist Search of a tree using arrays
+//Depth-first Search of a tree using arrays
 //I originally was stumped by the array structure of the tree and had to look
 //at their solution for help, but I've learned how to do it a bit cleaner now because of it
 
