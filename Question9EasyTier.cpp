@@ -10,17 +10,17 @@ using namespace std;
 class Node {
 public:
 	//we need a name for each node
-  string name;
+	string name;
 	//and a list within each node containing each node's children
-  vector<Node *> children;
+  	vector<Node *> children;
 	
 	//Default constructor
-  Node(string str) { name = str; }
+  	Node(string str) { name = str; }
 
 	//function for performing the search
 	//gets passed an empty for us to build on
-  vector<string> depthFirstSearch(vector<string> *array) {
-    //store the name of the current node in the input array
+  	vector<string> depthFirstSearch(vector<string> *array) {
+    	//store the name of the current node in the input array
 		array->push_back(this->name);
 		//for each of the current node's children, perform the same function recursively
 		for(int i = 0; i < this->children.size(); i++){
@@ -34,9 +34,9 @@ public:
 
 	//a function to add children Nodes, calls the constructor but also
 	//builds the children array of the node the child is added to
-  Node *addChild(string name) {
-    Node *child = new Node(name);
-    children.push_back(child);
-    return this;
+	Node *addChild(string name) {
+  		Node *child = new Node(name);
+    		children.push_back(child);
+    		return this;
   }
 };
