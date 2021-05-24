@@ -20,7 +20,7 @@ public:
 	//function for performing the search
 	//gets passed an empty for us to build on
   	vector<string> depthFirstSearch(vector<string> *array) {
-    	//store the name of the current node in the input array
+    		//store the name of the current node in the input array
 		array->push_back(this->name);
 		//for each of the current node's children, perform the same function recursively
 		for(int i = 0; i < this->children.size(); i++){
