@@ -24,7 +24,7 @@ def ArmSums(node, runningTotal):
 	#if the current node is null then we've gone outside of the tree
 	#this means we exit so that the most recent node can check
 	#to see if there is a right-hand node to travel to
-    if node == None:
+    	if node == None:
 		return
     
 	#add to the running total
@@ -33,13 +33,13 @@ def ArmSums(node, runningTotal):
 	runningTotal = runningTotal + node.value
 	
 	#recur on left child
-  ArmSums(node.left, runningTotal)
+  	ArmSums(node.left, runningTotal)
     
 	#if there is no node to the left or right then you have reached the end
 	#of a branch, and should add the running total to the list
 	if node.left == None and node.right == None:
 		sumList.insert(len(sumList), runningTotal)
 		
-  #recur on right child
-	#this happens immediately after a left node returns due to NULL (see above)
-  ArmSums(node.right, runningTotal)
+  	#recur on right child
+	#this happens immediately after a left node returns due to None (see above)
+  	ArmSums(node.right, runningTotal)
