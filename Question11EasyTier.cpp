@@ -18,7 +18,7 @@ bool classPhotos(vector<int> redShirtHeights, vector<int> blueShirtHeights) {
 	
 	//first lets sort both vectors in ascending order
 	//if the students of both rows in height order do not satisfy the
-	//conditions, then theres is no arrangement of students that will work
+	//conditions, then there is no arrangement of students that will work
 	sort(redShirtHeights.begin(), redShirtHeights.end());
 	sort(blueShirtHeights.begin(), blueShirtHeights.end());
 	
