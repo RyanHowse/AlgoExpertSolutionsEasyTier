@@ -4,12 +4,12 @@
 #if given a list of their execution times
 
 def minimumWaitingTime(queries):
-    #we need a return value
+	#we need a return value
 	minimumWaitTime = 0
 	#and a value that we previously added
 	previousValue = 0
 	
-    #first we need to sort the vector into ascending order
+	#first we need to sort the vector into ascending order
 	#this makes it so that we are waiting the least amount of time.
 	#if a large number is at the beginning of the vector, this large number
 	#is going to be carried forward for the rest of the calculations,
