@@ -11,7 +11,7 @@ int tandemBicycle(vector<int> redShirtSpeeds, vector<int> blueShirtSpeeds,
 	//first we need a running total for the return variable
 	int totalSpeed = 0;
 	
-  //in order to do this, we have to sort the first vector in ascending order
+  	//in order to do this, we have to sort the first vector in ascending order
 	//whether we sort the second in ascending or descending depends
 	//on whether we want the fastest or slowest possible speed total
 	//basically to get the fastest speed possible, we want to pair the fastest people
@@ -35,5 +35,5 @@ int tandemBicycle(vector<int> redShirtSpeeds, vector<int> blueShirtSpeeds,
 		}
 	}
 	
-  return totalSpeed;
+  	return totalSpeed;
 }
