@@ -15,7 +15,7 @@ def classPhotos(redShirtHeights, blueShirtHeights):
 	
 	#first lets sort both vectors in ascending order
 	#if the students of both rows in height order do not satisfy the
-	#conditions, then theres is no arrangement of students that will work
+	#conditions, then there is no arrangement of students that will work
 	redShirtHeights.sort()
 	blueShirtHeights.sort()
 	
