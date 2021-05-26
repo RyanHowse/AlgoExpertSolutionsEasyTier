@@ -6,7 +6,7 @@
 using namespace std;
 
 int minimumWaitingTime(vector<int> queries) {
-  //we need a return value
+	//we need a return value
 	int minimumWaitTime = 0;
 	//and a value that we previously added
 	int previousValue = 0;
@@ -16,7 +16,7 @@ int minimumWaitingTime(vector<int> queries) {
 	//if a large number is at the beginning of the vector, this large number
 	//is going to be carried forward for the rest of the calculations,
 	//so having smaller numbers appear first gives us the lowest calculations
-  sort(queries.begin(), queries.end());
+  	sort(queries.begin(), queries.end());
 	
 	//then we simply iterate through the vector and add each number fibonacci
 	//style to a running total, which will be our return variable
