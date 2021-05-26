@@ -8,7 +8,7 @@
 using namespace std;
 
 bool classPhotos(vector<int> redShirtHeights, vector<int> blueShirtHeights) {
-  //First we need a return variable, in this case a boolean
+	//First we need a return variable, in this case a boolean
 	//to determine if a photo with the current class makeup is possible
 	//under the given rules
 	//it will become false if conditions are not met
@@ -50,5 +50,5 @@ bool classPhotos(vector<int> redShirtHeights, vector<int> blueShirtHeights) {
 		}
 	}
 	
-  return isPossible;
+	return isPossible;
 }
