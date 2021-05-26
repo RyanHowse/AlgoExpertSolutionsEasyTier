@@ -16,6 +16,6 @@ class Node:
 
     def depthFirstSearch(self, array):
         array.insert(len(array), self.name)
-		    for c in self.children:
-            c.depthFirstSearch(array)
-		    return array
+	for c in self.children:
+        	c.depthFirstSearch(array)
+	return array
