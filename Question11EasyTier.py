@@ -42,4 +42,4 @@ def classPhotos(redShirtHeights, blueShirtHeights):
 				#stop checking for efficiency sake
 				break
 
-	return isPossible;
+	return isPossible
