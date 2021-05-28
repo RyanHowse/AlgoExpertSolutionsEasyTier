@@ -3,7 +3,7 @@
 #Finding the nth fibonacci number
 
 def getNthFib(n):
-  #let's give ourselves a return variable, which will
+  	#let's give ourselves a return variable, which will
 	#also be our running total
 	currentValue = 1
 	#the next value in the sequence
