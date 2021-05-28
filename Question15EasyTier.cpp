@@ -15,7 +15,7 @@ int productSumRecursive(vector<any> array, int depth);
 
 int productSum(vector<any> array) {
 	//we need a return total, and a way to mark what depth we're at
-  int sumTotal = 0;
+  	int sumTotal = 0;
 	int currentDepth = 1;
 	for(int i = 0; i < array.size(); i++){
 		//check to see if the current array index is an integer or a nested array
@@ -29,7 +29,7 @@ int productSum(vector<any> array) {
 		}
 	}
 	//the program eventually ends here, after all the recursion has resolved
-  return sumTotal;
+  	return sumTotal;
 }
 
 int productSumRecursive(vector<any> array, int depth){
