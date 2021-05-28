@@ -8,7 +8,7 @@
 # Tip: You can use the type(element) function to check whether an item
 # is a list or an integer.
 def productSum(array):
-    #we need a return total, and a way to mark what depth we're at
+    	#we need a return total, and a way to mark what depth we're at
 	sumTotal = 0
 	currentDepth = 1
 	for i in array:
