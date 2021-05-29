@@ -44,7 +44,7 @@ int binarySearchRecursive(vector<int> array, int target, int left, int right){
 		return binarySearchRecursive(array, target, left, middle -1);
 	}
 	//if the target value is greater than the middle index value,
-  //we need to recurse using the middle index + 1 as our lower limit
+  	//we need to recurse using the middle index + 1 as our lower limit
 	//this time, and the previous right value as our upper limit
 	else{
 		return binarySearchRecursive(array, target, middle + 1, right); 
