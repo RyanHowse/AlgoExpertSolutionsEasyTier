@@ -7,7 +7,7 @@ def isPalindrome(str):
 	isPalindrome = True
 	
 	#turn the data string into a list
-	list(str);
+	list(str)
 	
 	#checks if the first and last character is the same
 	#every iteration the characters to check moves forward on
