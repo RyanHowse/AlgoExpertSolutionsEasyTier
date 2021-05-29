@@ -6,8 +6,8 @@
 using namespace std;
 
 string caesarCypherEncryptor(string str, int key) {
-  //create a character array and send the data string to it
-  char stringChars[str.length()+1];
+  	//create a character array and send the data string to it
+  	char stringChars[str.length()+1];
 	strcpy(stringChars, str.c_str());
 	
 	//now we just take each character and shift it over to the
