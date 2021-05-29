@@ -24,8 +24,8 @@ string caesarCypherEncryptor(string str, int key) {
 			//example: character is x, key is 30
 			//difference is 2, so we need (30-2) % 26
 			//this gives us 28 % 26, which is 2
-			//we add 2 to 96, which is the code before a, and we get c
-			// x shifted 30 is c
+			//we add 2 to 96, which is the code before a, and we get b
+			// x shifted 30 is b
 			stringChars[i] = 96 + ((key-diff)%26);
 		}
 		else{
