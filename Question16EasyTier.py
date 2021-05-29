@@ -6,7 +6,7 @@
 #because even their solution doesn't seem to work if I change it up to have one return 
 
 def binarySearch(array, target):
-    #the first thing we pass the recursive function is the whole array, the target value,
+    	#the first thing we pass the recursive function is the whole array, the target value,
 	#and for our initial range we just give it the whole scope of the array
 	return binarySearchRecursive(array, target, 0, len(array)-1);
 
