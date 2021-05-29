@@ -8,7 +8,7 @@
 using namespace std;
 
 string runLengthEncoding(string str) {
-  //Let's have a return variable
+  	//Let's have a return variable
 	string returnString = "";
 	//and a counter
 	int consecutiveCharacters = 1;
@@ -34,5 +34,5 @@ string runLengthEncoding(string str) {
 			consecutiveCharacters = 1;
 		}
 	}
-  return returnString;
+  	return returnString;
 }
