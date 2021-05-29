@@ -10,7 +10,7 @@ bool isPalindrome(string str) {
 	bool isPalindrome = true;
 	
 	//create a character array and send the data string to it
-  char stringChars[str.length()+1];
+  	char stringChars[str.length()+1];
 	strcpy(stringChars, str.c_str());
 	
 	//checks if the first and last character is the same
@@ -25,5 +25,5 @@ bool isPalindrome(string str) {
 		}
 	}
 	
-  return isPalindrome;
+	return isPalindrome;
 }
