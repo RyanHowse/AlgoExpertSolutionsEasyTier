@@ -6,7 +6,7 @@
 using namespace std;
 
 vector<int> bubbleSort(vector<int> array) {
-  //lets do a bubble sort
+ 	//lets do a bubble sort
 	//the basic idea is that the bigger numbers
 	//slowly float to the top
 	//it does work
