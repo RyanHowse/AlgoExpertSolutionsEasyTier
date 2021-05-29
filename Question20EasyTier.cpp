@@ -9,7 +9,7 @@ vector<int> selectionSort(vector<int> array) {
 	//this sort works by finding the lowest unsorted value
 	//and moving it to the end of the sorted subset at the front of the array
 	int lowestIndex = 0;
-  for(int i = 0; i < array.size(); i++){
+	for(int i = 0; i < array.size(); i++){
 		//we set j to start equal to i, that way we aren't checking
 		//already sorted values
 		for(int j = i; j < array.size(); j++){
@@ -28,5 +28,5 @@ vector<int> selectionSort(vector<int> array) {
 		//set the lowestIndex to our next starting point
 		lowestIndex = i+1;
 	}
-  return array;
+	return array;
 }
