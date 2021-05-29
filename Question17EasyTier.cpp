@@ -6,7 +6,7 @@
 using namespace std;
 
 vector<int> findThreeLargestNumbers(vector<int> array) {
-  //let's make an array to hold our highest values
+  	//let's make an array to hold our highest values
 	//the initial values are the lowest possible integer
 	vector<int> highestValues = {INT_MIN, INT_MIN, INT_MIN};
 	//for every value in the data array, we check against the 
@@ -32,5 +32,5 @@ vector<int> findThreeLargestNumbers(vector<int> array) {
 	
 	//sort to ascending for requirements purposes
 	sort(highestValues.begin(), highestValues.end());
-  return highestValues;
+  	return highestValues;
 }
