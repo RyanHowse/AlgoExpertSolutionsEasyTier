@@ -5,7 +5,7 @@
 using namespace std;
 
 bool generateDocument(string characters, string document) {
-  //to do this, we're going to sort the characters of each string into 2 lists
+  	//to do this, we're going to sort the characters of each string into 2 lists
 	//then go through each character and see if the required characters for the
 	//document are available in the data string
 	sort(characters.begin(), characters.end());
@@ -43,5 +43,5 @@ bool generateDocument(string characters, string document) {
 		}
 	}
 	
-  return isPossible;
+  	return isPossible;
 }
