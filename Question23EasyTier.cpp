@@ -18,8 +18,6 @@ string runLengthEncoding(string str) {
 	//if so, add "9" and the character to the string and reset the counter to keep going
 	for(int i = 0; i < str.length(); i++){
 		if(str[i]==str[i+1]){
-			cout << str[i];
-			cout << "";
 			consecutiveCharacters++;
 			if(consecutiveCharacters == 10){
 				returnString += to_string(consecutiveCharacters-1)+str[i];
@@ -28,8 +26,6 @@ string runLengthEncoding(string str) {
 		}
 		//if the next character is not the same, add the counter and the character to the string
 		else{
-			cout << str[i];
-			cout << "";
 			returnString += to_string(consecutiveCharacters)+str[i];
 			consecutiveCharacters = 1;
 		}
